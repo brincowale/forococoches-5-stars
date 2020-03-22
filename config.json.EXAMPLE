@@ -1,0 +1,11 @@
+{
+  "fc_categories": ["2", "17", "23", "27"],
+  "database": {
+    "connection": "user:passwd@tcp(hostname:3306)/db"
+  },
+  "telegram": {
+    "api_key": "0000000:nnnnn-nnnnnnnnnnnnn",
+    "channel": "@fc5stars"
+  },
+  "sentry": "https://nnnnnnnnnnnnn@sentry.io/00000000"
+}
