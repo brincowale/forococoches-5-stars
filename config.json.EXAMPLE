@@ -7,5 +7,6 @@
     "api_key": "0000000:nnnnn-nnnnnnnnnnnnn",
     "channel": "@fc5stars"
   },
-  "sentry": "https://nnnnnnnnnnnnn@sentry.io/00000000"
+  "sentry": "https://nnnnnnnnnnnnn@sentry.io/00000000",
+  "proxy": ""
 }

@@ -1,10 +1,9 @@
 package models
 
 type Thread struct {
-	Id       int
-	Title    string
-	Category string
-	URL      string
+	Id    int
+	Title string
+	URL   string
 }
 
 func (Thread) TableName() string {

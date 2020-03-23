@@ -1,6 +1,7 @@
 package utils
 
 import (
+	"fmt"
 	"forococoches-5-stars/models"
 	"github.com/getsentry/sentry-go"
 	"github.com/go-errors/errors"
@@ -26,6 +27,7 @@ type Message struct {
 
 func SendTelegramMessage(message string, config Config) bool {
 	var URL = "https://api.telegram.org/bot" + config.TelegramApiKey + "/sendMessage"
+	fmt.Println(message)
 	data := Message{
 		ChatId: config.TelegramChannel,
 		Text:   message,

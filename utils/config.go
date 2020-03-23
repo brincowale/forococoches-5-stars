@@ -9,11 +9,11 @@ import (
 
 type Config struct {
 	DBConnection    string
-	DBTable         string
 	Categories      []string
 	TelegramApiKey  string
 	TelegramChannel string
 	Sentry          string
+	ProxyURI        string
 }
 
 func ReadConfig() Config {
@@ -27,11 +27,11 @@ func ReadConfig() Config {
 	}
 	config := Config{
 		DBConnection:    viper.GetString("database.connection"),
-		DBTable:         viper.GetString("database.table"),
 		Categories:      viper.GetStringSlice("fc_categories"),
 		TelegramApiKey:  viper.GetString("telegram.api_key"),
 		TelegramChannel: viper.GetString("telegram.channel"),
 		Sentry:          viper.GetString("sentry"),
+		ProxyURI:        viper.GetString("proxy"),
 	}
 	return config
 }
